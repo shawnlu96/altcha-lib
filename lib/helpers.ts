@@ -1,7 +1,6 @@
 // @denoify-line-ignore
-import './crypto.js';
 import type { Algorithm } from './types.js';
-
+import * as crypto from 'node:crypto';
 export const encoder = new TextEncoder();
 
 export function ab2hex(ab: ArrayBuffer | Uint8Array) {

@@ -1,5 +1,4 @@
-import type { Algorithm } from './types.ts';
-
+import * as crypto from 'node:crypto';
 export const encoder = new TextEncoder();
 
 export function ab2hex(ab: ArrayBuffer | Uint8Array) {
